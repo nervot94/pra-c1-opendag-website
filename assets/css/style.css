@@ -242,3 +242,62 @@ p {
     position: absolute;
     left: 0;
 }
+
+/* Footer */
+.site-footer {
+    background: var(--donkerblauw);
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.footer-nav a {
+    color: var(--geel);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* One-pager */
+.onepage .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.onepage section {
+    scroll-margin-top: 4.5rem;
+}
+
+.onepage section + section {
+    margin-top: 2.5rem;
+}
+
+.onepage h2 {
+    color: var(--blauw);
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        justify-content: center;
+        text-align: center;
+    }
+}

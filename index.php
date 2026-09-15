@@ -131,5 +131,18 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <?php echo date('Y'); ?> Opendag Software Developer – Curio</p>
+            <nav class="footer-nav" aria-label="Footernavigatie">
+                <a href="#opbouw">Opbouw</a>
+                <a href="#vakken">Vakken</a>
+                <a href="#rooster">Rooster</a>
+                <a href="#levels">Levels</a>
+                <a href="#versnellen">Versnellen</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
