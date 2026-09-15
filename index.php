@@ -29,7 +29,7 @@
             <h1>Opendag <span class="highlight">Software Developer</span></h1>
             <p class="hero-sub">
                 Benieuwd hoe het is om software developer te worden? Kom langs, ontdek de
-                opleiding, spreeks studenten en docenten en stel al je vragen.
+                opleiding, spreek studenten en docenten en stel al je vragen.
             </p>
         </section>
 
