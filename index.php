@@ -31,7 +31,6 @@
                 Benieuwd hoe het is om software developer te worden? Kom langs, ontdek de
                 opleiding, spreeks studenten en docenten en stel al je vragen.
             </p>
-            <p class="hero-meta">Datum: wordt binnenkort bekend – Locatie: Curio, Breda</p>
         </section>
 
         <section id="opbouw">
