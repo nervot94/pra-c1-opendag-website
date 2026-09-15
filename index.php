@@ -13,7 +13,7 @@
 <body class="onepage">
     <header class="site-header">
         <nav class="nav container" aria-label="Hoofdnavigatie">
-            <a href="#home" class="nav-brand">Opendag <span>SD</span></a>
+            <a href="#home" class="nav-brand">Curio <span>Software Developer</span></a>
             <ul class="nav-links">
                 <li><a href="#opbouw">Opbouw</a></li>
                 <li><a href="#vakken">Vakken</a></li>
