@@ -52,22 +52,22 @@
                     <tbody>
                         <?php foreach ($unitOnderdelen as $onderdeel): ?>
                             <tr>
-                                <th><?php echo htmlspecialchars($onderdeel['onderdeel']); ?></th>
-                                <td><?php echo htmlspecialchars($onderdeel['duur']); ?></td>
-                                <td><?php echo htmlspecialchars($onderdeel['toelichting']); ?></td>
+                                <th><?php echo $onderdeel['onderdeel']; ?></th>
+                                <td><?php echo $onderdeel['duur']; ?></td>
+                                <td><?php echo $onderdeel['toelichting']; ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
             <h3>De leerlijnen</h3>
-            <p>Door alle levels heen lopen vijf leerlijnen: <?php echo htmlspecialchars(implode(', ', $leerlijnen)); ?>.</p>
+            <p>Door alle levels heen lopen vijf leerlijnen: <?php echo implode(', ', $leerlijnen); ?>.</p>
             <h3>Challenges &amp; masterclasses</h3>
             <p>
                 Challenges zijn projecten van 3 weken (gevolgd door een reflectieweek) waarin je
                 individueel of in groepsverband leeruitkomsten aantoont met bewijslast. In level 1
                 worden deze aangeleverd, in level 2 kies je ze zelf. Daarnaast volg je losse
-                masterclasses van circa 45-60 minuten, zoals: <?php echo htmlspecialchars(implode(', ', $masterclasses)); ?>.
+                masterclasses van circa 45-60 minuten, zoals: <?php echo implode(', ', $masterclasses); ?>.
             </p>
         </section>
 
@@ -76,8 +76,8 @@
             <section class="cards">
                 <?php foreach ($vakken as $vak): ?>
                     <article class="card <?php echo $vak['kleur']; ?>">
-                        <h3><?php echo htmlspecialchars($vak['naam']); ?></h3>
-                        <p><?php echo htmlspecialchars($vak['tekst']); ?></p>
+                        <h3><?php echo $vak['naam']; ?></h3>
+                        <p><?php echo $vak['tekst']; ?></p>
                     </article>
                 <?php endforeach; ?>
             </section>
@@ -96,16 +96,16 @@
             <section class="cards">
                 <?php foreach ($levels as $level): ?>
                     <article class="card <?php echo $level['kleur']; ?>">
-                        <span class="badge"><?php echo htmlspecialchars($level['naam']); ?></span>
-                        <h3><?php echo htmlspecialchars($level['titel']); ?></h3>
-                        <p><?php echo htmlspecialchars($level['tekst']); ?></p>
+                        <span class="badge"><?php echo $level['naam']; ?></span>
+                        <h3><?php echo $level['titel']; ?></h3>
+                        <p><?php echo $level['tekst']; ?></p>
                         <ul>
                             <?php foreach ($level['lijst'] as $punt): ?>
-                                <li><?php echo htmlspecialchars($punt); ?></li>
+                                <li><?php echo $punt; ?></li>
                             <?php endforeach; ?>
                         </ul>
                         <?php if (!empty($level['voet'])): ?>
-                            <p><?php echo htmlspecialchars($level['voet']); ?></p>
+                            <p><?php echo $level['voet']; ?></p>
                         <?php endif; ?>
                     </article>
                 <?php endforeach; ?>
@@ -117,8 +117,8 @@
             <section class="cards">
                 <?php foreach ($trajecten as $traject): ?>
                     <article class="card <?php echo $traject['kleur']; ?>">
-                        <h3><?php echo htmlspecialchars($traject['naam']); ?></h3>
-                        <p><?php echo htmlspecialchars($traject['tekst']); ?></p>
+                        <h3><?php echo $traject['naam']; ?></h3>
+                        <p><?php echo $traject['tekst']; ?></p>
                     </article>
                 <?php endforeach; ?>
             </section>
@@ -126,7 +126,7 @@
                 <h3>Hoe werkt versnellen?</h3>
                 <ul class="checklist">
                     <?php foreach ($versnellenPunten as $punt): ?>
-                        <li><?php echo htmlspecialchars($punt); ?></li>
+                        <li><?php echo $punt; ?></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
